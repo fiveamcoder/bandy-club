@@ -8,12 +8,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="max-w-7xl m-auto px-5">
-    <header>
+    <header class="relative">
         <nav >
-            <div class="navbar bg-base-100 pt-6 pb-6 lg:pb-12 lg:pt-12">
+            <div class="navbar bg-base-100 pr-0 pl-0 pt-6 pb-6 lg:pb-12 lg:pt-12">
                 <div class="navbar-start">
-                  <div class="dropdown lg:hidden">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                  <div class="dropdown lg:hidden mr-3 border-2 border-[#424247] border-solid">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-square hover:rounded-none">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -45,6 +45,28 @@
                 </div>
               </div>
         </nav>
+        <!-- Slider Area Start -->
+        <div class="carousel w-full lg:h-[550px] h-[300px] lg:relative">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./images/cup.png" class="w-full" />
+              <div class="absolute flex gap-3 bottom-3 m-auto lg:gap-4 transform -translate-y-1/2 lg:left-10 lg:bottom-6">
+                <a href="#" class="btn btn-circle bg-black text-white border-none hover:text-black text-base lg:text-2xl">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-black text-white border-none hover:text-black text-base lg:text-2xl">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./images/field.png" class="w-full" />
+              <div class="absolute flex gap-3 bottom-3 m-auto lg:gap-4 transform -translate-y-1/2 lg:left-10 lg:bottom-6">
+                <a href="#slide1" class="btn btn-circle bg-black text-white border-none hover:text-black text-base lg:text-2xl">❮</a> 
+                <a href="#" class="btn btn-circle bg-black text-white border-none hover:text-black text-base lg:text-2xl">❯</a>
+              </div>
+            </div> 
+            <div class="absolute bg-[#131318] lg:absolute p-4 lg:p-8 rounded-2xl lg:max-w-xl w-full lg:bottom-8 lg:right-8 -bottom-[7.5rem]">
+              <h2 class="text-white font-extrabold text-lg lg:text-2xl mb-1 lg:mb-2">Meet all the heroes from the field</h2>
+              <p class="text-sm lg:text-base text-[#FFFFFF99] font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+          </div>
+        <!-- Slider Area End -->
     </header>
     <main>
 
